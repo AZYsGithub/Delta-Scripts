@@ -1,7 +1,7 @@
 --[[
 	Delta Mobile | Keyboard Script
 	Made by: Chillz#0348
-	Author: Lxnny ✞#5013 & Chillz#0348
+	Author: Lxnny ✞#5013 & Chillz#0348 (DeltaTeam)
 ]]
 
 
