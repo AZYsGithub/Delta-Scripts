@@ -2753,7 +2753,7 @@ local function C_138()
 	local cooldown = false
 
 	buttons.Close.MouseButton1Up:Connect(function()
-		script.Parent.Parent.Parent:Destroy()
+		script.Parent.Parent:Destroy()
 	end)
 	buttons.Close.MouseEnter:Connect(function()
 		buttons.Close.BackgroundColor3 = Color3.fromRGB(220, 0, 0)
