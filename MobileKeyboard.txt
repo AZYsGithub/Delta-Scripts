@@ -17,6 +17,7 @@
 -- Instances: 345 | Scripts: 6 | Modules: 0
 local G2L = {};
 
+if not delta then return end
 -- StarterGui.DeltaKeyboard
 G2L["1"] = Instance.new("ScreenGui", gethui());
 G2L["1"]["Name"] = [[DeltaKeyboard]];
