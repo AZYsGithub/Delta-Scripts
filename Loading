@@ -1,0 +1,201 @@
+
+local DELTA = {};
+
+-- DeltaLoadingScreen
+DELTA["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+DELTA["1"]["IgnoreGuiInset"] = true;
+DELTA["1"]["Enabled"] = false;
+DELTA["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+DELTA["1"]["Name"] = [[DeltaLoadingScreen]];
+DELTA["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+DELTA["1"]["ResetOnSpawn"] = false;
+
+-- DeltaLoadingScreen.DarkOverlay
+DELTA["2"] = Instance.new("Frame", DELTA["1"]);
+DELTA["2"]["ZIndex"] = -100;
+DELTA["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+DELTA["2"]["BackgroundTransparency"] = 0.6600000262260437;
+DELTA["2"]["Size"] = UDim2.new(2, 0, 2, 0);
+DELTA["2"]["Position"] = UDim2.new(-1, 0, -1, 0);
+DELTA["2"]["Name"] = [[DarkOverlay]];
+
+-- DeltaLoadingScreen.MainFrame
+DELTA["3"] = Instance.new("ImageLabel", DELTA["1"]);
+DELTA["3"]["BorderSizePixel"] = 0;
+DELTA["3"]["ScaleType"] = Enum.ScaleType.Crop;
+DELTA["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+DELTA["3"]["Image"] = [[rbxassetid://13387419794]];
+DELTA["3"]["LayoutOrder"] = 10;
+DELTA["3"]["Size"] = UDim2.new(0.32863849401474, 0, 0.31259891390800476, 0);
+DELTA["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+DELTA["3"]["Name"] = [[MainFrame]];
+DELTA["3"]["Position"] = UDim2.new(0.33568075299263, 0, 0.34122562408447266, 0);
+
+-- DeltaLoadingScreen.MainFrame.UICorner
+DELTA["4"] = Instance.new("UICorner", DELTA["3"]);
+DELTA["4"]["CornerRadius"] = UDim.new(0.07000000029802322, 0);
+
+-- DeltaLoadingScreen.MainFrame.Overlay
+DELTA["5"] = Instance.new("ImageLabel", DELTA["3"]);
+DELTA["5"]["BackgroundColor3"] = Color3.fromRGB(26, 27, 36);
+DELTA["5"]["Image"] = [[rbxassetid://13387657138]];
+DELTA["5"]["LayoutOrder"] = 10;
+DELTA["5"]["Size"] = UDim2.new(1, 0, 1, 0);
+DELTA["5"]["Name"] = [[Overlay]];
+DELTA["5"]["BackgroundTransparency"] = 0.800000011920929;
+
+-- DeltaLoadingScreen.MainFrame.Overlay.UICorner
+DELTA["6"] = Instance.new("UICorner", DELTA["5"]);
+DELTA["6"]["CornerRadius"] = UDim.new(0.07000000029802322, 0);
+
+-- DeltaLoadingScreen.MainFrame.Overlay.Title
+DELTA["7"] = Instance.new("TextLabel", DELTA["5"]);
+DELTA["7"]["TextWrapped"] = true;
+DELTA["7"]["TextScaled"] = true;
+DELTA["7"]["BackgroundColor3"] = Color3.fromRGB(118, 192, 255);
+DELTA["7"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+DELTA["7"]["TextSize"] = 14;
+DELTA["7"]["TextColor3"] = Color3.fromRGB(203, 244, 255);
+DELTA["7"]["AnchorPoint"] = Vector2.new(0, 0.5);
+DELTA["7"]["Size"] = UDim2.new(0.6451469659805298, 0, 0.1418459564447403, 0);
+DELTA["7"]["Text"] = [[Please wait a while!]];
+DELTA["7"]["Name"] = [[Title]];
+DELTA["7"]["BackgroundTransparency"] = 1;
+DELTA["7"]["Position"] = UDim2.new(0.1773512363433838, 0, 0.4073548913002014, 0);
+
+-- DeltaLoadingScreen.MainFrame.Overlay.Desc
+DELTA["8"] = Instance.new("TextLabel", DELTA["5"]);
+DELTA["8"]["TextWrapped"] = true;
+DELTA["8"]["TextScaled"] = true;
+DELTA["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+DELTA["8"]["FontFace"] = Font.new([[rbxassetid://11702779517]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+DELTA["8"]["TextSize"] = 14;
+DELTA["8"]["TextColor3"] = Color3.fromRGB(199, 220, 255);
+DELTA["8"]["AnchorPoint"] = Vector2.new(0, 0.5);
+DELTA["8"]["Size"] = UDim2.new(0.8879498243331909, 0, 0.1277613639831543, 0);
+DELTA["8"]["Text"] = [[We are currently setting everything up for you]];
+DELTA["8"]["Name"] = [[Desc]];
+DELTA["8"]["BackgroundTransparency"] = 1;
+DELTA["8"]["Position"] = UDim2.new(0.06185942143201828, 0, 0.5393086075782776, 0);
+
+-- DeltaLoadingScreen.MainFrame.DropShadowHolder
+DELTA["9"] = Instance.new("Frame", DELTA["3"]);
+DELTA["9"]["ZIndex"] = 0;
+DELTA["9"]["BorderSizePixel"] = 0;
+DELTA["9"]["BackgroundTransparency"] = 1;
+DELTA["9"]["Size"] = UDim2.new(1, 0, 1, 0);
+DELTA["9"]["Name"] = [[DropShadowHolder]];
+
+-- DeltaLoadingScreen.MainFrame.DropShadowHolder.DropShadow
+DELTA["a"] = Instance.new("ImageLabel", DELTA["9"]);
+DELTA["a"]["ZIndex"] = 0;
+DELTA["a"]["BorderSizePixel"] = 0;
+DELTA["a"]["SliceCenter"] = Rect.new(49, 49, 450, 450);
+DELTA["a"]["ScaleType"] = Enum.ScaleType.Slice;
+DELTA["a"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
+DELTA["a"]["ImageTransparency"] = 0.699999988079071;
+DELTA["a"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+DELTA["a"]["Image"] = [[rbxassetid://6014261993]];
+DELTA["a"]["Size"] = UDim2.new(1, 47, 1, 47);
+DELTA["a"]["Name"] = [[DropShadow]];
+DELTA["a"]["BackgroundTransparency"] = 1;
+DELTA["a"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+
+-- DeltaLoadingScreen.MainFrame.UIAspectRatioConstraint
+DELTA["b"] = Instance.new("UIAspectRatioConstraint", DELTA["3"]);
+DELTA["b"]["AspectRatio"] = 1.8712739944458008;
+
+-- DeltaLoadingScreen.LoadingModule
+DELTA["c"] = Instance.new("ModuleScript", DELTA["1"]);
+DELTA["c"]["Name"] = [[LoadingModule]];
+
+
+-- Require DELTA wrapper
+local DELTA_REQUIRE = require;
+local DELTA_MODULES = {};
+local function require(Module:ModuleScript)
+    local ModuleState = DELTA_MODULES[Module];
+    if ModuleState then
+        if not ModuleState.Required then
+			ModuleState.Required = true;            ModuleState.Value = ModuleState.Closure();
+        end
+        return ModuleState.Value;
+    end;
+    return DELTA_REQUIRE(Module);
+end
+
+DELTA_MODULES[DELTA["c"]] = {
+Closure = function()
+    local script = DELTA["c"];
+local lib = {}
+
+local tweenserv = game:GetService("TweenService")
+local frame = script.Parent.MainFrame
+local DarkOverlay = script.Parent.DarkOverlay
+
+local isLoading = false
+local delayz = 0.6
+
+
+local function TextFadeLoop()
+	local title = frame.Overlay.Title
+	local desc =  frame.Overlay.Desc
+	
+	local timeToFade = 1
+	
+	local titleStart = tweenserv:Create(title, TweenInfo.new(timeToFade, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextTransparency = 0.8})
+	local titleEnd = tweenserv:Create(title, TweenInfo.new(timeToFade, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextTransparency = 0})
+	
+	local descStart = tweenserv:Create(desc, TweenInfo.new(timeToFade, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextTransparency = 0.8})
+	local descEnd = tweenserv:Create(desc, TweenInfo.new(timeToFade, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {TextTransparency = 0})
+	
+	while isLoading == true do
+		titleStart:Play()
+		descStart:Play()
+		titleStart.Completed:Wait()
+		titleEnd:Play()
+		descEnd:Play()
+		titleEnd.Completed:Wait()
+	end
+end
+function lib:Start()
+	isLoading = true	
+	
+	script.Parent.Enabled = true
+	frame.Position = UDim2.new(0.336, 0,-0.372, 0)
+	DarkOverlay.Transparency = 1
+	
+	local tw1 = tweenserv:Create(frame, TweenInfo.new(delayz, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Position = UDim2.new(0.336, 0,0.322, 0)})
+	local tw2 = tweenserv:Create(DarkOverlay, TweenInfo.new(delayz, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Transparency = 0.66})
+	tw1:Play()
+	tw2:Play()
+	tw2.Completed:Wait()
+	TextFadeLoop()
+end
+
+function lib:End()
+	isLoading = false
+
+	DarkOverlay.Transparency = 1
+
+	local tw1 = tweenserv:Create(frame, TweenInfo.new(delayz, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Position = UDim2.new(0.336, 0,-0.372, 0)})
+	local tw2 = tweenserv:Create(DarkOverlay, TweenInfo.new(delayz, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Transparency = 1})
+	tw1:Play()
+	tw2:Play()
+end
+
+
+return lib
+end;
+};
+local rLib = require(DELTA["c"])
+
+local fLib =  {}
+function fLib:Start()
+	rLib:Start()
+end
+function fLib:End()
+	rLib:End()
+end
+
+return fLib
