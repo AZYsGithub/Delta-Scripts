@@ -190,12 +190,4 @@ end;
 };
 local rLib = require(DELTA["c"])
 
-local fLib =  {}
-function fLib:Start()
-	rLib:Start()
-end
-function fLib:End()
-	rLib:End()
-end
-
-return fLib
+return rLib
